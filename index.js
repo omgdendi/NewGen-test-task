@@ -24,7 +24,7 @@ let getCoursesByFilter = (courses, range) => {
 }
 
 // Функция, выполняющая сортировку. Если второй аргумент true, то сортирует по возрастанию
-// левой границы цены, если false - по возрастанию левой границы цены
+// левой границы цены, если false - по убыванию левой границы цены
 let getSortCourses = (courses, isIncrease) => {
     return courses.sort((a, b) => {
         let endA = a.prices[1];
